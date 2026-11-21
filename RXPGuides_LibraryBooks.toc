@@ -1,0 +1,12 @@
+## Interface: 16001
+## Title: RestedXP Library Books
+## Notes: Every library book on WoW Forever, in the fastest order, as a RestedXP guide.
+## Author: heyitsmk
+## Version: @project-version@
+## IconTexture: Interface\AddOns\RXPGuides_LibraryBooks\Media\Icon
+## Dependencies: RXPGuides
+## X-License: MIT
+## X-Website: https://github.com/heyitsmk/RXPGuides_LibraryBooks
+
+Guides\LibraryBooks_Alliance.lua
+Guides\LibraryBooks_Horde.lua

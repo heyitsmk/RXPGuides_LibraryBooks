@@ -1,0 +1,7 @@
+# Packager output
+.release/
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

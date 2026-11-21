@@ -1,0 +1,11 @@
+package-as: RXPGuides_LibraryBooks
+
+enable-nolib-creation: no
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+ignore:
+  - README.md
+  - CHANGELOG.md
