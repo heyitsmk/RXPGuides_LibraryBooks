@@ -7,6 +7,7 @@
 ## Dependencies: RXPGuides
 ## X-License: MIT
 ## X-Website: https://github.com/heyitsmk/RXPGuides_LibraryBooks
+## X-Curse-Project-ID: 1821956
 
 Guides\LibraryBooks_Alliance.lua
 Guides\LibraryBooks_Horde.lua

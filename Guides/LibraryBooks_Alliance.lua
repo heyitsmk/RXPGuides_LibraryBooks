@@ -30,6 +30,8 @@ step
     .goto 1455,55.50,47.70
     >>Talk to |cRXP_FRIENDLY_Gryth Thurden|r
     .fly Light's Hope Chapel >> Fly to Light's Hope Chapel, Eastern Plaguelands
+    .zone 1423 >> Arrive in Eastern Plaguelands
+    .zoneskip 1423
     .target Gryth Thurden
 step
     .isQuestAvailable 84398
@@ -53,10 +55,6 @@ step
     #completewith next
     .isQuestAvailable 84402
     .zone 1422 >> Travel to Western Plaguelands
-step
-    .isQuestAvailable 84402
-    .goto 1422,80.62,12.84
-    .fly Crown Guard Tower >> Fly to Crown Guard Tower, Eastern Plaguelands
 step
     .isQuestAvailable 84402
     .goto 1422,69.40,72.80
@@ -114,6 +112,8 @@ step
     .goto 1425,11.10,46.10
     >>Talk to |cRXP_FRIENDLY_Guthrum Thunderfist|r
     .fly Refuge Pointe >> Fly to Refuge Pointe, Arathi
+    .zone 1417 >> Arrive in Arathi Highlands
+    .zoneskip 1417
     .target Guthrum Thunderfist
 step
     .isQuestAvailable 79949
@@ -206,6 +206,8 @@ step
     .goto 1419,65.50,24.30
     >>Talk to |cRXP_FRIENDLY_Alexandra Constantine|r
     .fly Darkshire >> Fly to Darkshire, Duskwood
+    .zone 1431 >> Arrive in Duskwood
+    .zoneskip 1431
     .target Alexandra Constantine
 step
     #completewith next
@@ -285,6 +287,8 @@ step
     .goto 1447,11.90,77.60
     >>Talk to |cRXP_FRIENDLY_Jarrodenus|r
     .fly Everlook >> Fly to Everlook, Winterspring
+    .zone 1452 >> Arrive in Winterspring
+    .zoneskip 1452
     .target Jarrodenus
 step
     .isQuestAvailable 84399
@@ -297,6 +301,8 @@ step
     .goto 1452,62.30,36.60
     >>Talk to |cRXP_FRIENDLY_Maethrya|r
     .fly Moonglade >> Fly to Moonglade
+    .zone 1450 >> Arrive in Moonglade
+    .zoneskip 1450
     .target Maethrya
 step
     #completewith next
@@ -323,6 +329,8 @@ step
     .goto 1439,36.30,45.60
     >>Talk to |cRXP_FRIENDLY_Caylais Moonfeather|r
     .fly Nijel's Point >> Fly to Nijel's Point, Desolace
+    .zone 1443 >> Arrive in Desolace
+    .zoneskip 1443
     .target Caylais Moonfeather
 step
     .isQuestAvailable 79950
@@ -365,6 +373,8 @@ step
     .goto 1445,67.50,51.30
     >>Talk to |cRXP_FRIENDLY_Baldruc|r
     .fly Thalanaar >> Fly to Thalanaar, Feralas
+    .zone 1444 >> Arrive in Feralas
+    .zoneskip 1444
     .target Baldruc
 step
     #completewith next

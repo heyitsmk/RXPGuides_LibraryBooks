@@ -43,14 +43,8 @@ step
     .collect 228141,1 --Necromancy 101
 step
     #completewith next
-    .isQuestAvailable 84400
+    .isQuestAvailable 84401
     .zone 1423 >> Travel to Eastern Plaguelands
-step
-    .isQuestAvailable 84400
-    .goto 1423,47.30,42.30
-    >>Pick up |cRXP_PICK_The Knight and the Lady|r (Eastern Plaguelands)
-    >>In a small house by the lake.
-    .collect 228138,1 --The Knight and the Lady
 step
     .isQuestAvailable 84401
     .goto 1423,26.50,15.00
@@ -58,13 +52,11 @@ step
     >>On the table just right of the bridge into Stratholme, outside the dungeon.
     .collect 228140,1 --Scourge: Undead Menace or Misunderstood?
 step
-    #completewith next
-    .isQuestAvailable 84398
-    .zone 1422 >> Travel to Western Plaguelands
-step
-    .isQuestAvailable 84398
-    .goto 1422,80.62,12.84
-    .fly Eastwall Tower >> Fly to Eastwall Tower, Eastern Plaguelands
+    .isQuestAvailable 84400
+    .goto 1423,47.30,42.30
+    >>Pick up |cRXP_PICK_The Knight and the Lady|r (Eastern Plaguelands)
+    >>In a small house by the lake.
+    .collect 228138,1 --The Knight and the Lady
 step
     .isQuestAvailable 84398
     .goto 1423,71.80,48.20
@@ -76,6 +68,8 @@ step
     .goto 1423,70.50,47.50
     >>Talk to |cRXP_FRIENDLY_Georgia|r
     .fly Revantusk Village >> Fly to Revantusk Village, The Hinterlands
+    .zone 1425 >> Arrive in The Hinterlands
+    .zoneskip 1425
     .target Georgia
 step
     .isQuestAvailable 81954
@@ -114,6 +108,8 @@ step
     .goto 1421,45.60,42.60
     >>Talk to |cRXP_FRIENDLY_Karos Razok|r
     .fly Hammerfall >> Fly to Hammerfall, Arathi
+    .zone 1417 >> Arrive in Arathi Highlands
+    .zoneskip 1417
     .target Karos Razok
 step
     .isQuestAvailable 79949
@@ -232,6 +228,8 @@ step
     .goto 1434,32.50,29.40
     >>Talk to |cRXP_FRIENDLY_Thysta|r
     .fly Stonard >> Fly to Stonard, Swamp of Sorrows
+    .zone 1435 >> Arrive in Swamp of Sorrows
+    .zoneskip 1435
     .target Thysta
 step
     #completewith next
@@ -273,6 +271,8 @@ step
     .goto 1446,51.60,25.40
     >>Talk to |cRXP_FRIENDLY_Bulkrek Ragefist|r
     .fly Freewind Post >> Fly to Freewind Post, Thousand Needles
+    .zone 1441 >> Arrive in Thousand Needles
+    .zoneskip 1441
     .target Bulkrek Ragefist
 step
     .isQuestAvailable 79947
@@ -289,6 +289,8 @@ step
     .goto 1441,45.10,49.10
     >>Talk to |cRXP_FRIENDLY_Nyse|r
     .fly Thunder Bluff >> Fly to Thunder Bluff, Mulgore
+    .zone 1456 >> Arrive in Thunder Bluff
+    .zoneskip 1456
     .target Nyse
 step
     #completewith next
@@ -371,6 +373,8 @@ step
     .goto 1447,22.00,49.60
     >>Talk to |cRXP_FRIENDLY_Kroum|r
     .fly Everlook >> Fly to Everlook, Winterspring
+    .zone 1452 >> Arrive in Winterspring
+    .zoneskip 1452
     .target Kroum
 step
     .isQuestAvailable 84399
@@ -383,6 +387,8 @@ step
     .goto 1452,60.50,36.30
     >>Talk to |cRXP_FRIENDLY_Yugrek|r
     .fly Moonglade >> Fly to Moonglade
+    .zone 1450 >> Arrive in Moonglade
+    .zoneskip 1450
     .target Yugrek
 step
     #completewith next
@@ -476,10 +482,10 @@ step
     .turnin 84395 >> Turn in Undead Potatoes
     .accept 84402 >> Accept Necromancy 101
     .turnin 84402 >> Turn in Necromancy 101
-    .accept 84400 >> Accept The Knight and the Lady
-    .turnin 84400 >> Turn in The Knight and the Lady
     .accept 84401 >> Accept Scourge: Undead Menace or Misunderstood?
     .turnin 84401 >> Turn in Scourge: Undead Menace or Misunderstood?
+    .accept 84400 >> Accept The Knight and the Lady
+    .turnin 84400 >> Turn in The Knight and the Lady
     .accept 84398 >> Accept A Study of the Light
     .turnin 84398 >> Turn in A Study of the Light
     .accept 84396 >> Accept Magma or Lava?

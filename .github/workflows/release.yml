@@ -1,8 +1,8 @@
 name: Package and release
 
-# Push a tag (e.g. v1.0.0) to package the addon and attach the zip to a GitHub release. Once the CurseForge
-# project exists, add "## X-Curse-Project-ID: <id>" to the TOC and a CF_API_KEY repository secret, and the same
-# run uploads to CurseForge.
+# Push a tag (e.g. v1.0.0) to package the addon and attach the zip to a GitHub release, which WowUp installs from.
+# CurseForge builds its own file from the same tag through the repository's webhook, so don't add a CF_API_KEY
+# secret here: this workflow would then upload to CurseForge as well, and every tag would land there twice.
 on:
   push:
     tags:
