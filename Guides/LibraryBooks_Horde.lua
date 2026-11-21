@@ -8,7 +8,7 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group Library Books
 step
-    +Collects every library book (37) in the fastest order found, on a 60% mount with every Horde flight path known. Books you have already turned in are skipped.
+    +Collects every library book (38) in the fastest order found, on a 60% mount with every Horde flight path known. Books you have already turned in are skipped.
 step
     .goto 1458,67.70,37.90
     >>Talk to |cRXP_FRIENDLY_Innkeeper Norman|r
@@ -151,6 +151,17 @@ step
     >>Pick up |cRXP_PICK_Mummies: A Guide to the Unsavory Undead|r (Crypt)
     >>The crypt is on the south side of the butte, above a small dwarven camp. Go in; the book is inside.
     .collect 215820,1 --Mummies: A Guide to the Unsavory Undead
+step
+    #completewith next
+    .isQuestAvailable 79091
+    .zone 1455 >> Travel to Ironforge
+step
+    .isQuestAvailable 79091
+    .goto 1455,75.70,10.50
+    >>Pick up |cRXP_PICK_Archmage Antonidas: The Unabridged Autobiography|r (Hall of Explorers)
+    >>Ironforge's Hall of Explorers: on the big table in the centre of the hall.
+    >>|cRXP_WARN_Ironforge is an Alliance city with elite guards. Skip this step if you'd rather not risk it.|r
+    .collect 203754,1 --Archmage Antonidas: The Unabridged Autobiography
 step
     #completewith next
     .isQuestAvailable 81955
@@ -434,6 +445,8 @@ step
     .turnin 78148 >> Turn in Runes of the Sorcerer-Kings
     .accept 79951 >> Accept Mummies: A Guide to the Unsavory Undead
     .turnin 79951 >> Turn in Mummies: A Guide to the Unsavory Undead
+    .accept 79091 >> Accept Archmage Antonidas: The Unabridged Autobiography
+    .turnin 79091 >> Turn in Archmage Antonidas: The Unabridged Autobiography
     .accept 81955 >> Accept A Mind of Metal
     .turnin 81955 >> Turn in A Mind of Metal
     .accept 81953 >> Accept Stonewrought Design

@@ -8,7 +8,7 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group Library Books
 step
-    +Collects every library book (36) in the fastest order found, on a 60% mount with every Alliance flight path known. Books you have already turned in are skipped.
+    +Collects every library book (38) in the fastest order found, on a 60% mount with every Alliance flight path known. Books you have already turned in are skipped.
 step
     .goto 1453,60.40,75.30
     >>Talk to |cRXP_FRIENDLY_Innkeeper Allison|r
@@ -79,8 +79,15 @@ step
     .collect 208185,1 --The Apothecary's Metaphysical Primer
 step
     #completewith next
-    .isQuestAvailable 78127
+    .isQuestAvailable 79096
     .zone 1421 >> Travel to Silverpine Forest
+step
+    .isQuestAvailable 79096
+    .goto 1421,43.40,41.20
+    >>Pick up |cRXP_PICK_Ataeric: On Arcane Curiosities|r (The Sepulcher)
+    >>Inside the Sepulcher's tomb, near Sebastian Meloche. Click the container called Arcane Secrets.
+    >>|cRXP_WARN_The Sepulcher is a Horde outpost with guards.|r
+    .collect 210177,1 --Ataeric: On Arcane Curiosities
 step
     .isQuestAvailable 78127
     .goto 1421,63.50,63.10
@@ -274,6 +281,17 @@ step
     .collect 209847,1 --Arcanic Systems Manual
 step
     #completewith next
+    .isQuestAvailable 79094
+    .zone 1454 >> Travel to Orgrimmar
+step
+    .isQuestAvailable 79094
+    .goto 1454,38.70,78.40
+    >>Pick up |cRXP_PICK_The Lessons of Ta'zo|r (Valley of Spirits)
+    >>A large stone tablet with red writing, leaning on the wall on your left as you head toward the mage trainers, in front of the Darkbriar Lodge sign. Click it to trace the mural.
+    >>|cRXP_WARN_Orgrimmar is a Horde city with elite guards. Skip this step if you'd rather not risk it.|r
+    .collect 207972,1 --The Lessons of Ta'zo
+step
+    #completewith next
     .isQuestAvailable 81952
     .zone 1447 >> Travel to Azshara
 step
@@ -410,6 +428,8 @@ step
     .turnin 79091 >> Turn in Archmage Antonidas: The Unabridged Autobiography
     .accept 79095 >> Accept The Apothecary's Metaphysical Primer
     .turnin 79095 >> Turn in The Apothecary's Metaphysical Primer
+    .accept 79096 >> Accept Ataeric: On Arcane Curiosities
+    .turnin 79096 >> Turn in Ataeric: On Arcane Curiosities
     .accept 78127 >> Accept The Dalaran Digest, Vol. 23
     .turnin 78127 >> Turn in The Dalaran Digest, Vol. 23
     .accept 79948 >> Accept Defensive Magics 101
@@ -446,6 +466,8 @@ step
     .turnin 79097 >> Turn in Baxtan: On Destructive Magics
     .accept 78145 >> Accept Arcanic Systems Manual
     .turnin 78145 >> Turn in Arcanic Systems Manual
+    .accept 79094 >> Accept The Lessons of Ta'zo
+    .turnin 79094 >> Turn in The Lessons of Ta'zo
     .accept 81952 >> Accept Everyday Etiquette
     .turnin 81952 >> Turn in Everyday Etiquette
     .accept 78124 >> Accept Nar'thalas Almanac, Vol. 74
