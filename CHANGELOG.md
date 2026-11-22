@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.3
+
+- Now also available on Wago Addons.
+
 ## v0.1.2
 
 - Waypoints to the entrances of the Raven Hill crypt, the Lushwater Oasis cave and the path up to

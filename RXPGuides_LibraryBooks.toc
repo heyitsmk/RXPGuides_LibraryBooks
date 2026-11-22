@@ -8,6 +8,7 @@
 ## X-License: MIT
 ## X-Website: https://github.com/heyitsmk/RXPGuides_LibraryBooks
 ## X-Curse-Project-ID: 1821956
+## X-Wago-ID: rN4r0jKD
 
 Guides\LibraryBooks_Alliance.lua
 Guides\LibraryBooks_Horde.lua

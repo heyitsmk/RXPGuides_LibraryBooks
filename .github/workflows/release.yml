@@ -1,6 +1,7 @@
 name: Package and release
 
-# Push a tag (e.g. v1.0.0) to package the addon and attach the zip to a GitHub release, which WowUp installs from.
+# Push a tag (e.g. v1.0.0) to package the addon, attach the zip to a GitHub release (which WowUp installs from)
+# and upload it to Wago Addons (the WAGO_API_TOKEN secret, and the TOC's X-Wago-ID).
 # CurseForge builds its own file from the same tag through the repository's webhook, so don't add a CF_API_KEY
 # secret here: this workflow would then upload to CurseForge as well, and every tag would land there twice.
 on:
@@ -16,6 +17,7 @@ jobs:
     env:
       CF_API_KEY: ${{ secrets.CF_API_KEY }}
       GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+      WAGO_API_TOKEN: ${{ secrets.WAGO_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
         with:
