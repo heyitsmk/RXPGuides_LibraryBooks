@@ -204,9 +204,13 @@ step
     .zone 1431 >> Travel to Duskwood
 step
     .isQuestAvailable 78147
+    .goto 1431,16.18,38.81,20
+    >>Go into the western crypt at Raven Hill Cemetery and take the stairs down into the Dawning Wood Catacombs
+step
+    .isQuestAvailable 78147
     .goto 1431,16.60,28.50
     >>Pick up |cRXP_PICK_Crimes Against Anatomy|r (The Darkened Bank)
-    >>Raven Hill Crypt: go into the western building and down into the Dawning Wood Catacombs. The spellbook is in the farthest room.
+    >>In the farthest room of the Dawning Wood Catacombs.
     .collect 209849,1 --Crimes Against Anatomy
 step
     #completewith next
@@ -264,10 +268,9 @@ step
     .collect 220345,1 --Sanguine Sorcery
 step
     #completewith next
-    .isQuestAvailable 81949
     .zone 2548 >> Travel to Riverglades
 step
-    .isQuestAvailable 81949
+    .zoneskip 1411/1412/1413/1438/1439/1440/1441/1442/1443/1444/1445/1446/1447/1448/1449/1450/1451/1452/1454/1456/1457/2482/2652
     .goto 2548,80.60,54.61
     >>Take the boat from Powderfuse Port to Steamwheedle Port
     .zone 1446 >> Travel to Tanaris
@@ -287,7 +290,7 @@ step
     .target Bulkrek Ragefist
 step
     .isQuestAvailable 79947
-    .goto 1441,31.00,36.50,20
+    .goto 1441,39.13,29.40,20
     >>The path up to Darkcloud Pinnacle starts here
 step
     .isQuestAvailable 79947
@@ -325,16 +328,6 @@ step
     .collect 209851,1 --Fury of the Land
 step
     #completewith next
-    .isQuestAvailable 78143
-    .zone 1413 >> Travel to The Barrens
-step
-    .isQuestAvailable 78143
-    .goto 1413,46.00,36.50
-    >>Pick up |cRXP_PICK_Secrets of the Dreamers|r (Lushwater Oasis)
-    >>Enter the Lushwater Oasis cave and head down to the Cavern of Mists, where the Wailing Caverns portal is. The scroll is on the far side of the cavern from the portal.
-    .collect 209846,1 --Secrets of the Dreamers
-step
-    #completewith next
     .isQuestAvailable 79952
     .zone 1445 >> Travel to Dustwallow Marsh
 step
@@ -353,6 +346,26 @@ step
     >>Pick up |cRXP_PICK_Baxtan: On Destructive Magics|r (Ratchet)
     >>Ratchet's engineering building: the goblin tome sits right beside Gazlowe.
     .collect 208800,1 --Baxtan: On Destructive Magics
+step
+    .isQuestAvailable 78143
+    .goto 1413,63.10,37.20
+    >>Talk to |cRXP_FRIENDLY_Bragok|r
+    .fly Crossroads >> Fly to Crossroads, The Barrens
+    .target Bragok
+step
+    .isQuestAvailable 78143
+    .goto 1413,51.50,30.30,60
+    >>Land at Crossroads, The Barrens
+step
+    .isQuestAvailable 78143
+    .goto 1413,46.03,36.62,20
+    >>Enter the Lushwater Oasis cave and follow it down to the Cavern of Mists
+step
+    .isQuestAvailable 78143
+    .goto 1413,49.28,33.08
+    >>Pick up |cRXP_PICK_Secrets of the Dreamers|r (Lushwater Oasis)
+    >>In the Cavern of Mists, on the far side from the Wailing Caverns portal.
+    .collect 209846,1 --Secrets of the Dreamers
 step
     .isQuestAvailable 78145
     .goto 1413,56.30,8.80
@@ -473,12 +486,12 @@ step
     .turnin 79950 >> Turn in Demons and You
     .accept 78149 >> Accept Fury of the Land
     .turnin 78149 >> Turn in Fury of the Land
-    .accept 78143 >> Accept Secrets of the Dreamers
-    .turnin 78143 >> Turn in Secrets of the Dreamers
     .accept 79952 >> Accept RwlRwlRwlRwl!
     .turnin 79952 >> Turn in RwlRwlRwlRwl!
     .accept 79097 >> Accept Baxtan: On Destructive Magics
     .turnin 79097 >> Turn in Baxtan: On Destructive Magics
+    .accept 78143 >> Accept Secrets of the Dreamers
+    .turnin 78143 >> Turn in Secrets of the Dreamers
     .accept 78145 >> Accept Arcanic Systems Manual
     .turnin 78145 >> Turn in Arcanic Systems Manual
     .accept 79094 >> Accept The Lessons of Ta'zo
@@ -536,4 +549,6 @@ step
     .accept 84394 >> Accept Greater Friend of the Library
     .turnin 84394 >> Turn in Greater Friend of the Library
     .target Oran Snakewrithe
+step
+    +Done! Every library book is collected and turned in.
 ]])

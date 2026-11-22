@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.2
+
+- Waypoints to the entrances of the Raven Hill crypt, the Lushwater Oasis cave and the path up to
+  Darkcloud Pinnacle.
+- Secrets of the Dreamers points to where the book actually is, in the Cavern of Mists.
+- The boat to Kalimdor is no longer skipped while you are still in the Eastern Kingdoms.
+- A final step marks the guide as done.
+
 ## v0.1.1
 
 - Every book is now routed for both factions: Ataeric (the Sepulcher), The Lessons of Ta'zo (Orgrimmar) and
